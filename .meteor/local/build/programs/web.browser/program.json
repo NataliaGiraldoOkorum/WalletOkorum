@@ -666,13 +666,13 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/app/app.js?hash=b2104bf825c27069d79ffee0e70fdcae0288bb1a",
+      "url": "/app/app.js?hash=7542a24a2530a3e6730da7e28041385fc2e3dc3b",
       "replaceable": true,
       "sourceMap": "app/app.js.map",
-      "sourceMapUrl": "/app/b2104bf825c27069d79ffee0e70fdcae0288bb1a.map",
-      "size": 8967,
-      "hash": "b2104bf825c27069d79ffee0e70fdcae0288bb1a",
-      "sri": "uZX2ctT+qO+XB6lp43PcSVCAgiIulKjdWq+evIlqP5yQSx32nGKHhktgV5URDy/JwKliMRQaO4q6smXY1h9bFA=="
+      "sourceMapUrl": "/app/7542a24a2530a3e6730da7e28041385fc2e3dc3b.map",
+      "size": 8975,
+      "hash": "7542a24a2530a3e6730da7e28041385fc2e3dc3b",
+      "sri": "L0KuKTqNDp3tQkjjqUSIYnFYspuXiQWWXuJtnQHzW1REMeLl1jw79Ayd6Ix/nb8qPYfiBvtKQM/BePGWgmKe1A=="
     },
     {
       "path": "merged-stylesheets.css",
@@ -717,5 +717,5 @@
       "hash": "33a76f2b4c30f6e44559d748578e1b43c573b579"
     }
   ],
-  "hmrVersion": 1678801568384
+  "hmrVersion": 1678819385567
 }

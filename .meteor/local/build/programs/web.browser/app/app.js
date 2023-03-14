@@ -49,7 +49,7 @@ var require = meteorInstall({"imports":{"api":{"ContactsCollection.js":function 
     }
   }, 2);
   ___INIT_METEOR_FAST_REFRESH(module);
-  const App = () => /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h1", null, "Meteor Wallet "), /*#__PURE__*/React.createElement(ContactForm, null), /*#__PURE__*/React.createElement(ContactList, null));
+  const App = () => /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h1", null, "Meteor Wallet - Galaxy"), /*#__PURE__*/React.createElement(ContactForm, null), /*#__PURE__*/React.createElement(ContactList, null));
   _c = App;
   var _c;
   $RefreshReg$(_c, "App");
