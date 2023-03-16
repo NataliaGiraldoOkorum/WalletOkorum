@@ -1,0 +1,1 @@
+module.link('./mergeClasses',{default:"default"},0);

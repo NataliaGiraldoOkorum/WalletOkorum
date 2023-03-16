@@ -1,0 +1,1 @@
+module.link('./MenuList',{default:"default"},0);

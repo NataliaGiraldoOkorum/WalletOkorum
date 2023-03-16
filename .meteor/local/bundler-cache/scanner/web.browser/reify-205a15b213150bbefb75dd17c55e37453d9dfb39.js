@@ -1,0 +1,1 @@
+module.link('./jssPreset',{default:"default"},0);

@@ -1,0 +1,1 @@
+module.link('./Fade',{default:"default"},0);

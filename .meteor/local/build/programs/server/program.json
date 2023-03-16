@@ -215,9 +215,6 @@
       }
     },
     {
-      "path": "packages/autopublish.js"
-    },
-    {
       "node_modules": "npm/node_modules/meteor/ddp-server/node_modules",
       "sourceMap": "packages/ddp-server.js.map",
       "path": "packages/ddp-server.js"
@@ -240,9 +237,6 @@
       "path": "packages/binary-heap.js"
     },
     {
-      "path": "packages/insecure.js"
-    },
-    {
       "node_modules": "npm/node_modules/meteor/mongo/node_modules",
       "sourceMap": "packages/mongo.js.map",
       "path": "packages/mongo.js",
@@ -255,14 +249,6 @@
       "assets": {
         "reactive-var.d.ts": "assets/packages/reactive-var/reactive-var.d.ts"
       }
-    },
-    {
-      "node_modules": "npm/node_modules/meteor/minifier-css/node_modules",
-      "sourceMap": "packages/minifier-css.js.map",
-      "path": "packages/minifier-css.js"
-    },
-    {
-      "path": "packages/standard-minifier-css.js"
     },
     {
       "path": "packages/standard-minifier-js.js"

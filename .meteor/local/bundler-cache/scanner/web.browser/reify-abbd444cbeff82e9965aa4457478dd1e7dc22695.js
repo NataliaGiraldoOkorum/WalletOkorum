@@ -1,0 +1,1 @@
+module.link('./Box',{default:"default"},0);

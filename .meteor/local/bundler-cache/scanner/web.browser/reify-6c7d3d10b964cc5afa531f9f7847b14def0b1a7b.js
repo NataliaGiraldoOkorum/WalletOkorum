@@ -1,0 +1,1 @@
+module.link('./GlobalStyles',{default:"default"},0);

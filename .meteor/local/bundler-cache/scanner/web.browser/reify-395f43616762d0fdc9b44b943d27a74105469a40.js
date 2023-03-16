@@ -1,0 +1,1 @@
+module.link('./createGenerateClassName',{default:"default"},0);

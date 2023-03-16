@@ -105,17 +105,13 @@ install("routepolicy", "meteor/routepolicy/main.js");
 install("boilerplate-generator", "meteor/boilerplate-generator/generator.js");
 install("webapp-hashing");
 install("webapp", "meteor/webapp/webapp_server.js");
-install("autopublish");
 install("ddp-server");
 install("ddp");
 install("allow-deny");
 install("mongo-dev-server", "meteor/mongo-dev-server/server.js");
 install("binary-heap", "meteor/binary-heap/binary-heap.js");
-install("insecure");
 install("mongo");
 install("reactive-var");
-install("minifier-css", "meteor/minifier-css/minifier.js");
-install("standard-minifier-css");
 install("standard-minifier-js");
 install("typescript");
 install("shell-server", "meteor/shell-server/main.js");
@@ -1242,7 +1238,9 @@ module.useNode();
   "extensions": [
     ".js",
     ".json",
-    ".jsx"
+    ".ts",
+    ".jsx",
+    ".mjs"
   ]
 });
 

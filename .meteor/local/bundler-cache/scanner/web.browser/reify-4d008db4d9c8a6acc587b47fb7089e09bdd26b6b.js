@@ -1,0 +1,1 @@
+module.link('./getThemeProps',{default:"default"},0);
