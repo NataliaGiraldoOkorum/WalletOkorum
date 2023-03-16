@@ -3,7 +3,6 @@ import ContactsCollection from "../api/ContactsCollection";
 import { useSubscribe, useFind } from 'meteor/react-meteor-data';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-import Divider from '@mui/material/Divider';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
@@ -11,21 +10,18 @@ import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
 import Box from '@mui/material/Box';
-
-
+import ArchiveIcon from '@mui/icons-material/Archive';
 
 
 export const ContactList = () => {
-    const isLoading = useSubscribe('allContacts');
-    const contacts = useFind(() => ContactsCollection.find({}, { sort: { createdAt: -1 } }));
+    const isLoading = useSubscribe('contacts');
+    const contacts = useFind(() => ContactsCollection.find({ archived: { $ne: true }}, { sort: { createdAt: -1 } }));
 
-    // const contacts = useTracker(() => {
-    //     return ContactsCollection.find({}, { sort: { createdAt: -1 } }).fetch(); //Tracker 
-    // });
 
-    const removeContact = (event, _id) => {
+    const archiveContact = (event, _id) => {
         event.preventDefault();
-        Meteor.call('contacts.remove', { contactId: _id });
+        console.log("entra a archive");
+        Meteor.call('contacts.archive', { contactId: _id });
     }
 
 
@@ -44,8 +40,7 @@ export const ContactList = () => {
               height: 90,
               p: 2, border: '1px dashed grey',
               '&:hover': {
-                opacity: [0.5, 0.5, 0.5],
-                 
+                opacity: [0.5, 0.5, 0.5],           
               },
             }}
           >
@@ -64,9 +59,10 @@ export const ContactList = () => {
                     >
                         {contact.email}
                     </Typography>
-                    <IconButton aria-label="delete" onClick={(event) => removeContact(event, contact._id)}>
-                        <DeleteIcon />
-
+                    <IconButton aria-label="delete" onClick={(event) => archiveContact(event, contact._id)}>
+                        {/*<DeleteIcon />*/}
+                        <ArchiveIcon />
+                        {/*<BottomNavigationAction label="Archive" icon={<ArchiveIcon />} >Archive</BottomNavigationAction>*/}
                     </IconButton>
                 </React.Fragment>}
             ></ListItemText>
@@ -86,10 +82,3 @@ return (
     </div>
 )
 }
-
-            // <>
-        //     <h3>Contact List</h3>
-        //     {contacts.map(contact => (
-        //         <li key ={contact.email}>{contact.name} - {contact.email}</li>
-        //     ))}
-        // </>

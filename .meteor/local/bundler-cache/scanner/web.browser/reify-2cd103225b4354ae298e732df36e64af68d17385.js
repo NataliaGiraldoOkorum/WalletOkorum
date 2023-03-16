@@ -1,0 +1,5 @@
+let createSvgIcon;module.link('./utils/createSvgIcon',{default(v){createSvgIcon=v}},0);let _jsx;module.link("react/jsx-runtime",{jsx(v){_jsx=v}},1);
+
+module.exportDefault(createSvgIcon( /*#__PURE__*/_jsx("path", {
+  d: "m9.17 6 2 2H20v10H4V6h5.17M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"
+}), 'FolderOutlined'));

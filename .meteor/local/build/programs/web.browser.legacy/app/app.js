@@ -108,31 +108,125 @@ var require = meteorInstall({"imports":{"ui":{"components":{"ErrorAlert.jsx":fun
       React = v;
     }
   }, 0);
+  var ButtonAppBar;
+  module1.link("./ButtonAppBar", {
+    "default": function (v) {
+      ButtonAppBar = v;
+    }
+  }, 1);
   var ContactForm;
   module1.link("./ContactForm", {
     ContactForm: function (v) {
       ContactForm = v;
     }
-  }, 1);
+  }, 2);
   var ContactList;
   module1.link("./ContactList", {
     ContactList: function (v) {
       ContactList = v;
     }
-  }, 2);
-  var Header;
-  module1.link("./Header", {
-    "default": function (v) {
-      Header = v;
-    }
   }, 3);
   ___INIT_METEOR_FAST_REFRESH(module);
   var App = function () {
-    return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(ContactForm, null), /*#__PURE__*/React.createElement(ContactList, null))));
+    return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(ButtonAppBar, null), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(ContactForm, null), /*#__PURE__*/React.createElement(ContactList, null))));
   };
   _c = App;
   var _c;
   $RefreshReg$(_c, "App");
+}.call(this, module);
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+},"ButtonAppBar.jsx":function module(require,exports,module){
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//                                                                                                                //
+// imports/ui/ButtonAppBar.jsx                                                                                    //
+//                                                                                                                //
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                                                                                                                  //
+!function (module1) {
+  module1.export({
+    "default": function () {
+      return ButtonAppBar;
+    }
+  });
+  var React;
+  module1.link("react", {
+    "*": function (v) {
+      React = v;
+    }
+  }, 0);
+  var AppBar;
+  module1.link("@mui/material/AppBar", {
+    "default": function (v) {
+      AppBar = v;
+    }
+  }, 1);
+  var Box;
+  module1.link("@mui/material/Box", {
+    "default": function (v) {
+      Box = v;
+    }
+  }, 2);
+  var Toolbar;
+  module1.link("@mui/material/Toolbar", {
+    "default": function (v) {
+      Toolbar = v;
+    }
+  }, 3);
+  var Typography;
+  module1.link("@mui/material/Typography", {
+    "default": function (v) {
+      Typography = v;
+    }
+  }, 4);
+  var Button;
+  module1.link("@mui/material/Button", {
+    "default": function (v) {
+      Button = v;
+    }
+  }, 5);
+  var IconButton;
+  module1.link("@mui/material/IconButton", {
+    "default": function (v) {
+      IconButton = v;
+    }
+  }, 6);
+  var MenuIcon;
+  module1.link("@mui/icons-material/Menu", {
+    "default": function (v) {
+      MenuIcon = v;
+    }
+  }, 7);
+  ___INIT_METEOR_FAST_REFRESH(module);
+  function ButtonAppBar() {
+    return /*#__PURE__*/React.createElement(Box, {
+      sx: {
+        flexGrow: 1
+      }
+    }, /*#__PURE__*/React.createElement(AppBar, {
+      position: "static"
+    }, /*#__PURE__*/React.createElement(Toolbar, null, /*#__PURE__*/React.createElement(IconButton, {
+      size: "large",
+      edge: "start",
+      color: "inherit",
+      "aria-label": "menu",
+      sx: {
+        mr: 2
+      }
+    }, /*#__PURE__*/React.createElement(MenuIcon, null)), /*#__PURE__*/React.createElement(Typography, {
+      variant: "h6",
+      component: "div",
+      sx: {
+        flexGrow: 1
+      }
+    }, "News"), /*#__PURE__*/React.createElement(Button, {
+      color: "inherit"
+    }, "Login"))));
+  }
+  _c = ButtonAppBar;
+  var _c;
+  $RefreshReg$(_c, "ButtonAppBar");
 }.call(this, module);
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -183,6 +277,12 @@ var require = meteorInstall({"imports":{"ui":{"components":{"ErrorAlert.jsx":fun
       SuccessAlert = v;
     }
   }, 3);
+  var Button;
+  module1.link("@mui/material/Button", {
+    "default": function (v) {
+      Button = v;
+    }
+  }, 4);
   ___INIT_METEOR_FAST_REFRESH(module);
   var _s = $RefreshSig$();
   var ContactForm = function () {
@@ -274,8 +374,8 @@ var require = meteorInstall({"imports":{"ui":{"components":{"ErrorAlert.jsx":fun
         return setImageURL(e.target.value);
       },
       id: "imageURL"
-    })), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("button", {
-      type: "button",
+    })), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(Button, {
+      variant: "contained",
       onClick: saveContact
     }, "Save Contact")));
   };
@@ -336,74 +436,74 @@ var require = meteorInstall({"imports":{"ui":{"components":{"ErrorAlert.jsx":fun
       ListItem = v;
     }
   }, 4);
-  var Divider;
-  module1.link("@mui/material/Divider", {
-    "default": function (v) {
-      Divider = v;
-    }
-  }, 5);
   var ListItemText;
   module1.link("@mui/material/ListItemText", {
     "default": function (v) {
       ListItemText = v;
     }
-  }, 6);
+  }, 5);
   var ListItemAvatar;
   module1.link("@mui/material/ListItemAvatar", {
     "default": function (v) {
       ListItemAvatar = v;
     }
-  }, 7);
+  }, 6);
   var Avatar;
   module1.link("@mui/material/Avatar", {
     "default": function (v) {
       Avatar = v;
     }
-  }, 8);
+  }, 7);
   var Typography;
   module1.link("@mui/material/Typography", {
     "default": function (v) {
       Typography = v;
     }
-  }, 9);
+  }, 8);
   var IconButton;
   module1.link("@mui/material/IconButton", {
     "default": function (v) {
       IconButton = v;
     }
-  }, 10);
+  }, 9);
   var DeleteIcon;
   module1.link("@mui/icons-material/Delete", {
     "default": function (v) {
       DeleteIcon = v;
     }
-  }, 11);
+  }, 10);
   var Box;
   module1.link("@mui/material/Box", {
     "default": function (v) {
       Box = v;
+    }
+  }, 11);
+  var ArchiveIcon;
+  module1.link("@mui/icons-material/Archive", {
+    "default": function (v) {
+      ArchiveIcon = v;
     }
   }, 12);
   ___INIT_METEOR_FAST_REFRESH(module);
   var _s = $RefreshSig$();
   var ContactList = function () {
     _s();
-    var isLoading = useSubscribe('allContacts');
+    var isLoading = useSubscribe('contacts');
     var contacts = useFind(function () {
-      return ContactsCollection.find({}, {
+      return ContactsCollection.find({
+        archived: {
+          $ne: true
+        }
+      }, {
         sort: {
           createdAt: -1
         }
       });
     });
-
-    // const contacts = useTracker(() => {
-    //     return ContactsCollection.find({}, { sort: { createdAt: -1 } }).fetch(); //Tracker 
-    // });
-
-    var removeContact = function (event, _id) {
+    var archiveContact = function (event, _id) {
       event.preventDefault();
-      Meteor.call('contacts.remove', {
+      console.log("entra a archive");
+      Meteor.call('contacts.archive', {
         contactId: _id
       });
     };
@@ -439,9 +539,9 @@ var require = meteorInstall({"imports":{"ui":{"components":{"ErrorAlert.jsx":fun
         }, contact.email), /*#__PURE__*/React.createElement(IconButton, {
           "aria-label": "delete",
           onClick: function (event) {
-            return removeContact(event, contact._id);
+            return archiveContact(event, contact._id);
           }
-        }, /*#__PURE__*/React.createElement(DeleteIcon, null)))
+        }, /*#__PURE__*/React.createElement(ArchiveIcon, null)))
       })));
     });
     return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h3", null, "Contact List"), /*#__PURE__*/React.createElement(List, {
@@ -457,295 +557,12 @@ var require = meteorInstall({"imports":{"ui":{"components":{"ErrorAlert.jsx":fun
       });
     })));
   };
-  // <>
-  //     <h3>Contact List</h3>
-  //     {contacts.map(contact => (
-  //         <li key ={contact.email}>{contact.name} - {contact.email}</li>
-  //     ))}
-  // </>
   _s(ContactList, "is2fGqBKKCEulJxx0fGg6MRwA10=", false, function () {
     return [useSubscribe, useFind];
   });
   _c = ContactList;
   var _c;
   $RefreshReg$(_c, "ContactList");
-}.call(this, module);
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-},"Header.jsx":function module(require,exports,module){
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//                                                                                                                //
-// imports/ui/Header.jsx                                                                                          //
-//                                                                                                                //
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-                                                                                                                  //
-!function (module1) {
-  var _slicedToArray;
-  module1.link("@babel/runtime/helpers/slicedToArray", {
-    default: function (v) {
-      _slicedToArray = v;
-    }
-  }, 0);
-  var React;
-  module1.link("react", {
-    "*": function (v) {
-      React = v;
-    }
-  }, 0);
-  var AppBar;
-  module1.link("@mui/material/AppBar", {
-    "default": function (v) {
-      AppBar = v;
-    }
-  }, 1);
-  var Box;
-  module1.link("@mui/material/Box", {
-    "default": function (v) {
-      Box = v;
-    }
-  }, 2);
-  var Toolbar;
-  module1.link("@mui/material/Toolbar", {
-    "default": function (v) {
-      Toolbar = v;
-    }
-  }, 3);
-  var IconButton;
-  module1.link("@mui/material/IconButton", {
-    "default": function (v) {
-      IconButton = v;
-    }
-  }, 4);
-  var Typography;
-  module1.link("@mui/material/Typography", {
-    "default": function (v) {
-      Typography = v;
-    }
-  }, 5);
-  var Menu;
-  module1.link("@mui/material/Menu", {
-    "default": function (v) {
-      Menu = v;
-    }
-  }, 6);
-  var Container;
-  module1.link("@mui/material/Container", {
-    "default": function (v) {
-      Container = v;
-    }
-  }, 7);
-  var Avatar;
-  module1.link("@mui/material/Avatar", {
-    "default": function (v) {
-      Avatar = v;
-    }
-  }, 8);
-  var Button;
-  module1.link("@mui/material/Button", {
-    "default": function (v) {
-      Button = v;
-    }
-  }, 9);
-  var Tooltip;
-  module1.link("@mui/material/Tooltip", {
-    "default": function (v) {
-      Tooltip = v;
-    }
-  }, 10);
-  var MenuItem;
-  module1.link("@mui/material/MenuItem", {
-    "default": function (v) {
-      MenuItem = v;
-    }
-  }, 11);
-  ___INIT_METEOR_FAST_REFRESH(module);
-  //import AdbIcon from '@mui/icons-material/Adb';
-
-  var pages = ['Products', 'Pricing', 'Blog'];
-  var settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
-  function Header() {
-    var _ref = React.useState < null | HTMLElement > null,
-      _ref2 = _slicedToArray(_ref, 2),
-      anchorElNav = _ref2[0],
-      setAnchorElNav = _ref2[1];
-    var _ref3 = React.useState < null | HTMLElement > null,
-      _ref4 = _slicedToArray(_ref3, 2),
-      anchorElUser = _ref4[0],
-      setAnchorElUser = _ref4[1];
-    var handleOpenNavMenu = function (event) {
-      setAnchorElNav(event.currentTarget);
-    };
-    var handleOpenUserMenu = function (event) {
-      setAnchorElUser(event.currentTarget);
-    };
-    var handleCloseNavMenu = function () {
-      setAnchorElNav(null);
-    };
-    var handleCloseUserMenu = function () {
-      setAnchorElUser(null);
-    };
-    return /*#__PURE__*/React.createElement(AppBar, {
-      position: "static"
-    }, /*#__PURE__*/React.createElement(Container, {
-      maxWidth: "xl"
-    }, /*#__PURE__*/React.createElement(Toolbar, {
-      disableGutters: true
-    }, /*#__PURE__*/React.createElement(AdbIcon, {
-      sx: {
-        display: {
-          xs: 'none',
-          md: 'flex'
-        },
-        mr: 1
-      }
-    }), /*#__PURE__*/React.createElement(Typography, {
-      variant: "h6",
-      noWrap: true,
-      component: "a",
-      href: "/",
-      sx: {
-        mr: 2,
-        display: {
-          xs: 'none',
-          md: 'flex'
-        },
-        fontFamily: 'monospace',
-        fontWeight: 700,
-        letterSpacing: '.3rem',
-        color: 'inherit',
-        textDecoration: 'none'
-      }
-    }, "LOGO"), /*#__PURE__*/React.createElement(Box, {
-      sx: {
-        flexGrow: 1,
-        display: {
-          xs: 'flex',
-          md: 'none'
-        }
-      }
-    }, /*#__PURE__*/React.createElement(IconButton, {
-      size: "large",
-      "aria-label": "account of current user",
-      "aria-controls": "menu-appbar",
-      "aria-haspopup": "true",
-      onClick: handleOpenNavMenu,
-      color: "inherit"
-    }, /*#__PURE__*/React.createElement(MenuIcon, null)), /*#__PURE__*/React.createElement(Menu, {
-      id: "menu-appbar",
-      anchorEl: anchorElNav,
-      anchorOrigin: {
-        vertical: 'bottom',
-        horizontal: 'left'
-      },
-      keepMounted: true,
-      transformOrigin: {
-        vertical: 'top',
-        horizontal: 'left'
-      },
-      open: Boolean(anchorElNav),
-      onClose: handleCloseNavMenu,
-      sx: {
-        display: {
-          xs: 'block',
-          md: 'none'
-        }
-      }
-    }, pages.map(function (page) {
-      return /*#__PURE__*/React.createElement(MenuItem, {
-        key: page,
-        onClick: handleCloseNavMenu
-      }, /*#__PURE__*/React.createElement(Typography, {
-        textAlign: "center"
-      }, page));
-    }))), /*#__PURE__*/React.createElement(AdbIcon, {
-      sx: {
-        display: {
-          xs: 'flex',
-          md: 'none'
-        },
-        mr: 1
-      }
-    }), /*#__PURE__*/React.createElement(Typography, {
-      variant: "h5",
-      noWrap: true,
-      component: "a",
-      href: "",
-      sx: {
-        mr: 2,
-        display: {
-          xs: 'flex',
-          md: 'none'
-        },
-        flexGrow: 1,
-        fontFamily: 'monospace',
-        fontWeight: 700,
-        letterSpacing: '.3rem',
-        color: 'inherit',
-        textDecoration: 'none'
-      }
-    }, "LOGO"), /*#__PURE__*/React.createElement(Box, {
-      sx: {
-        flexGrow: 1,
-        display: {
-          xs: 'none',
-          md: 'flex'
-        }
-      }
-    }, pages.map(function (page) {
-      return /*#__PURE__*/React.createElement(Button, {
-        key: page,
-        onClick: handleCloseNavMenu,
-        sx: {
-          my: 2,
-          color: 'white',
-          display: 'block'
-        }
-      }, page);
-    })), /*#__PURE__*/React.createElement(Box, {
-      sx: {
-        flexGrow: 0
-      }
-    }, /*#__PURE__*/React.createElement(Tooltip, {
-      title: "Open settings"
-    }, /*#__PURE__*/React.createElement(IconButton, {
-      onClick: handleOpenUserMenu,
-      sx: {
-        p: 0
-      }
-    }, /*#__PURE__*/React.createElement(Avatar, {
-      alt: "Remy Sharp",
-      src: "/static/images/avatar/2.jpg"
-    }))), /*#__PURE__*/React.createElement(Menu, {
-      sx: {
-        mt: '45px'
-      },
-      id: "menu-appbar",
-      anchorEl: anchorElUser,
-      anchorOrigin: {
-        vertical: 'top',
-        horizontal: 'right'
-      },
-      keepMounted: true,
-      transformOrigin: {
-        vertical: 'top',
-        horizontal: 'right'
-      },
-      open: Boolean(anchorElUser),
-      onClose: handleCloseUserMenu
-    }, settings.map(function (setting) {
-      return /*#__PURE__*/React.createElement(MenuItem, {
-        key: setting,
-        onClick: handleCloseUserMenu
-      }, /*#__PURE__*/React.createElement(Typography, {
-        textAlign: "center"
-      }, setting));
-    }))))));
-  }
-  _c = Header;
-  module1.exportDefault(Header);
-  var _c;
-  $RefreshReg$(_c, "Header");
 }.call(this, module);
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -796,6 +613,12 @@ var require = meteorInstall({"imports":{"ui":{"components":{"ErrorAlert.jsx":fun
       check = v;
     }
   }, 2);
+  var ImportContactsRounded;
+  module1.link("@mui/icons-material", {
+    ImportContactsRounded: function (v) {
+      ImportContactsRounded = v;
+    }
+  }, 3);
   ___INIT_METEOR_FAST_REFRESH(module);
   Meteor.methods({
     'contacts.insert': function (_ref) {
@@ -819,6 +642,17 @@ var require = meteorInstall({"imports":{"ui":{"components":{"ErrorAlert.jsx":fun
       var contactId = _ref2.contactId;
       check(contactId, String);
       ContactsCollection.remove(contactId);
+    },
+    'contacts.archive': function (_ref3) {
+      var contactId = _ref3.contactId;
+      check(contactId, String);
+      ContactsCollection.update({
+        _id: contactId
+      }, {
+        $set: {
+          archived: true
+        }
+      });
     }
   });
 }.call(this, module);

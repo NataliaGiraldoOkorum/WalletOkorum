@@ -1,0 +1,5 @@
+let createSvgIcon;module.link('./utils/createSvgIcon',{default(v){createSvgIcon=v}},0);let _jsx;module.link("react/jsx-runtime",{jsx(v){_jsx=v}},1);
+
+module.exportDefault(createSvgIcon( /*#__PURE__*/_jsx("path", {
+  d: "M21 11H6.83l3.58-3.59L9 6l-6 6 6 6 1.41-1.41L6.83 13H21v-2z"
+}), 'KeyboardBackspaceTwoTone'));

@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { Meteor } from 'meteor/meteor'
 import ErrorAlert from './components/ErrorAlert';
 import SuccessAlert from './components/SuccessAlert';
+import Button from '@mui/material/Button';
 
 export const ContactForm = () => {     
   const [name, setName] = useState("");  //formik
@@ -74,7 +75,7 @@ export const ContactForm = () => {
           id="imageURL" />
       </div>
       <div>
-        <button type="button" onClick={saveContact}>Save Contact</button>
+      <Button variant="contained" onClick={saveContact}>Save Contact</Button>
       </div>
     </form>
   )
