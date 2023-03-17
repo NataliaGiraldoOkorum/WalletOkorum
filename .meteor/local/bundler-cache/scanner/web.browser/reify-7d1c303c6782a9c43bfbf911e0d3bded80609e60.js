@@ -1,0 +1,1 @@
+module.link('./useScrollTrigger',{default:"default"},0);

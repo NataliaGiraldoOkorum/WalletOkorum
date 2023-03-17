@@ -1,0 +1,1 @@
+module.link('./usePagination',{default:"default"},0);

@@ -1,0 +1,10 @@
+let React;module.link('react',{"*"(v){React=v}},0);let createSvgIcon;module.link('../../utils/createSvgIcon',{default(v){createSvgIcon=v}},1);let _jsx;module.link("react/jsx-runtime",{jsx(v){_jsx=v}},2);
+
+
+/**
+ * @ignore - internal component.
+ */
+
+module.exportDefault(createSvgIcon( /*#__PURE__*/_jsx("path", {
+  d: "M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"
+}), 'KeyboardArrowRight'));

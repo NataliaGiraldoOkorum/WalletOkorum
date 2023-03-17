@@ -1,0 +1,1 @@
+module.link('./Slide',{default:"default"},0);

@@ -61,11 +61,11 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/packages/modules.js?hash=068da2b2bc2cad4aa4b5ee2e4ff00ea78bce00df",
+      "url": "/packages/modules.js?hash=244b41243d4eecbaf277a7d3e06c8263127eebe2",
       "replaceable": false,
-      "size": 23905369,
-      "hash": "068da2b2bc2cad4aa4b5ee2e4ff00ea78bce00df",
-      "sri": "HZsjdYQcHvxr2v4mytt3B3uM+TzxlrnHYIY28gMu4ddyFKyg167vEhD4anoNf7A9Zy2iLFp0sL0MNMV4L1KHSA=="
+      "size": 25932367,
+      "hash": "244b41243d4eecbaf277a7d3e06c8263127eebe2",
+      "sri": "1ppYHvm0Mwc5d9hFxdtirHbAWjgcn9nJS9CrcqI7fPGBxuQWkjAUQxgI4FAJPODwMxX1AVV2Tjr1cmxLinZ4NQ=="
     },
     {
       "path": "packages/modern-browsers.js",
@@ -622,13 +622,13 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/app/app.js?hash=9585e02143d1be39a03a06b8ad1bfb29d87db1dd",
+      "url": "/app/app.js?hash=5f1e5e308dfa5013c36cec1892edc7ff47134648",
       "replaceable": true,
       "sourceMap": "app/app.js.map",
-      "sourceMapUrl": "/app/9585e02143d1be39a03a06b8ad1bfb29d87db1dd.map",
-      "size": 24063,
-      "hash": "9585e02143d1be39a03a06b8ad1bfb29d87db1dd",
-      "sri": "IUFe76KxSpllJXkY1ofzndaSOHahQFYHmHRfwbFnC5alZtNamynnSXCX/5GgH3sgQdA4wn0VApdaNXvXZk0Aog=="
+      "sourceMapUrl": "/app/5f1e5e308dfa5013c36cec1892edc7ff47134648.map",
+      "size": 37343,
+      "hash": "5f1e5e308dfa5013c36cec1892edc7ff47134648",
+      "sri": "rFY+bRyEnLl90Hh0Ecq36UpNgkJA383g2itAjOI+R67Kp4hwrr6DeOAvhVsQk9B/UTpXEaRyPQUKvOC4rAwrtw=="
     },
     {
       "path": "app/client/main.css",
@@ -684,5 +684,5 @@
       "hash": "33a76f2b4c30f6e44559d748578e1b43c573b579"
     }
   ],
-  "hmrVersion": 1679002051768
+  "hmrVersion": 1679094272628
 }

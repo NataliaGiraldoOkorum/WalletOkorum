@@ -14,17 +14,14 @@ export default function ButtonAppBar() {
         <Toolbar>
           <IconButton
             size="large"
-            edge="start"
             color="inherit"
             aria-label="menu"
             sx={{ mr: 2 }}
           >
-            <MenuIcon />
           </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            News
+          <Typography variant="h6" align="center" component="div" sx={{ flexGrow: 1 }}>
+             Meteor Wallet
           </Typography>
-          <Button color="inherit">Login</Button>
         </Toolbar>
       </AppBar>
     </Box>

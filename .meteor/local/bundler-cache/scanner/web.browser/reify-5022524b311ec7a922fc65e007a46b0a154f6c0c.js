@@ -1,0 +1,1 @@
+module.link('./useMediaQuery',{default:"default"},0);

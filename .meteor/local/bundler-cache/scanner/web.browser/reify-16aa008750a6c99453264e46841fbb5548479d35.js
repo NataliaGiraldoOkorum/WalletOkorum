@@ -1,0 +1,1 @@
+module.link('./Zoom',{default:"default"},0);

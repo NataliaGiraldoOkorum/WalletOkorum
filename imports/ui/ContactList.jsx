@@ -50,21 +50,29 @@ export const ContactList = () => {
             </ListItemAvatar>
             <ListItemText
                 primary={contact.name}
-                secondary={<React.Fragment>
+                secondary={<>
                     <Typography
-                        sx={{ display: 'inline' }}
+                        sx={{ display: 'block' }}
                         component="span"
                         variant="body3"
                         color="text.primary"
                     >
                         {contact.email}
                     </Typography>
+                    <Typography
+                        sx={{ display: 'block' }}
+                        component="span"
+                        variant="body3"
+                        color="text.primary"
+                    >
+                        {contact.walletId}
+                    </Typography>
                     <IconButton aria-label="delete" onClick={(event) => archiveContact(event, contact._id)}>
                         {/*<DeleteIcon />*/}
                         <ArchiveIcon />
                         {/*<BottomNavigationAction label="Archive" icon={<ArchiveIcon />} >Archive</BottomNavigationAction>*/}
                     </IconButton>
-                </React.Fragment>}
+                </>}
             ></ListItemText>
         </ListItem>
         </Box >
